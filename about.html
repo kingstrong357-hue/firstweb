@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 万企供应链</title>
+    <meta name="description" content="万企供应链（深圳）有限公司，专业的健康产品供应链服务商，华润三九和八马茶业深圳地区合作伙伴">
+    <meta name="keywords" content="万企供应链,公司介绍,企业文化,发展历程,团队介绍">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/about-page.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="万企供应链" class="logo">
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="products.html" class="nav-link">产品中心</a></li>
+                <li><a href="brands.html" class="nav-link">品牌合作</a></li>
+                <li><a href="about.html" class="nav-link active">关于我们</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="search-btn" onclick="openSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="contact-btn" onclick="showWechatQR()">
+                    <i class="fas fa-comments"></i>
+                    联系我们
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="hero-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span class="separator">/</span>
+                    <span class="current">关于我们</span>
+                </nav>
+                <h1 class="hero-title">万企供应链</h1>
+                <p class="hero-subtitle">专业的健康产品供应链服务商</p>
+                <p class="hero-description">
+                    致力于为客户提供优质的健康产品和茶叶供应链服务，<br>
+                    以专业、诚信、创新的理念，成为行业领先的供应链合作伙伴
+                </p>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2018">2018</div>
+                    <div class="stat-label">成立年份</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">500+</div>
+                    <div class="stat-label">合作客户</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">50+</div>
+                    <div class="stat-label">产品种类</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">99%</div>
+                    <div class="stat-label">客户满意度</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司简介 -->
+    <section class="company-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2 class="section-title">公司简介</h2>
+                    <p class="intro-paragraph">
+                        万企供应链（深圳）有限公司成立于2018年，是一家专注于健康产品供应链服务的现代化企业。
+                        公司位于深圳市龙华区宝能科技园10栋22A，拥有完善的供应链体系和专业的服务团队。
+                    </p>
+                    <p class="intro-paragraph">
+                        作为华润三九大健康保健食品和八马茶业在深圳地区的重要合作伙伴，我们致力于为客户提供
+                        高品质的健康产品和优质的茶叶。公司秉承"健康生活，品质服务"的经营理念，
+                        不断提升服务质量，为客户创造更大价值。
+                    </p>
+                    <div class="intro-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <span>品质保证</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>快速配送</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-headset"></i>
+                            <span>专业服务</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-visual">
+                    <div class="company-image">
+                        <img src="images/1.jpg" alt="万企供应链办公环境">
+                    </div>
+                    <div class="visual-elements">
+                        <div class="element-item">
+                            <i class="fas fa-building"></i>
+                            <span>现代化办公环境</span>
+                        </div>
+                        <div class="element-item">
+                            <i class="fas fa-users"></i>
+                            <span>专业团队</span>
+                        </div>
+                        <div class="element-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>持续发展</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企业文化 -->
+    <section class="company-culture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">企业文化</h2>
+                <p class="section-subtitle">以人为本，诚信经营，追求卓越</p>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-item">
+                    <div class="culture-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="culture-title">企业愿景</h3>
+                    <p class="culture-description">
+                        成为中国领先的健康产品供应链服务商，为人们的健康生活贡献力量
+                    </p>
+                </div>
+                <div class="culture-item">
+                    <div class="culture-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="culture-title">企业使命</h3>
+                    <p class="culture-description">
+                        通过专业的供应链服务，让优质的健康产品惠及更多家庭
+                    </p>
+                </div>
+                <div class="culture-item">
+                    <div class="culture-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="culture-title">核心价值观</h3>
+                    <p class="culture-description">
+                        诚信、专业、创新、共赢 - 以客户为中心，以品质为根本
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发展历程 -->
+    <section class="company-timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">发展历程</h2>
+                <p class="section-subtitle">见证我们的成长足迹</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">公司成立</h3>
+                        <p class="timeline-description">
+                            万企供应链（深圳）有限公司正式成立，开始专注于健康产品供应链服务
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">品牌合作</h3>
+                        <p class="timeline-description">
+                            与华润三九建立合作关系，成为其大健康保健食品在深圳地区的合作伙伴
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">业务拓展</h3>
+                        <p class="timeline-description">
+                            与八马茶业达成战略合作，业务范围扩展至品质茶叶供应链服务
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">服务升级</h3>
+                        <p class="timeline-description">
+                            建立完善的客户服务体系，提供一站式供应链解决方案
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">数字化转型</h3>
+                        <p class="timeline-description">
+                            启动数字化转型项目，建设线上服务平台，提升服务效率
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">持续发展</h3>
+                        <p class="timeline-description">
+                            继续深化品牌合作，扩大服务范围，为更多客户提供优质服务
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队介绍 -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">团队介绍</h2>
+                <p class="section-subtitle">专业的团队，专业的服务</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="images/1.jpg" alt="总经理">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">张总</h3>
+                        <p class="member-position">总经理</p>
+                        <p class="member-description">
+                            拥有15年供应链管理经验，致力于为客户提供最优质的服务
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="images/1.jpg" alt="销售总监">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">李总监</h3>
+                        <p class="member-position">销售总监</p>
+                        <p class="member-description">
+                            深耕健康产品行业10年，具有丰富的市场开拓和客户服务经验
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="images/1.jpg" alt="运营经理">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">王经理</h3>
+                        <p class="member-position">运营经理</p>
+                        <p class="member-description">
+                            专注于供应链优化和流程管理，确保高效的运营服务
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资质荣誉 -->
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">资质荣誉</h2>
+                <p class="section-subtitle">专业资质，值得信赖</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">营业执照</h3>
+                    <p class="cert-description">合法注册的企业法人</p>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="cert-title">食品经营许可证</h3>
+                    <p class="cert-description">具备食品经营资质</p>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="cert-title">品牌授权证书</h3>
+                    <p class="cert-description">华润三九、八马茶业授权</p>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="cert-title">优秀合作伙伴</h3>
+                    <p class="cert-description">多次获得合作伙伴表彰</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们预览 -->
+    <section class="contact-preview">
+        <div class="container">
+            <div class="preview-content">
+                <div class="preview-text">
+                    <h2>了解更多信息</h2>
+                    <p>如果您想了解更多关于万企供应链的信息，或者有任何合作意向，欢迎随时联系我们。</p>
+                </div>
+                <div class="preview-actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope"></i>
+                        联系我们
+                    </a>
+                    <a href="brands.html" class="btn btn-outline btn-lg">
+                        <i class="fas fa-handshake"></i>
+                        合作咨询
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>关于万企</h4>
+                    <ul>
+                        <li><a href="#intro">公司简介</a></li>
+                        <li><a href="#culture">企业文化</a></li>
+                        <li><a href="#timeline">发展历程</a></li>
+                        <li><a href="#team">团队介绍</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#quality">品质保证</a></li>
+                        <li><a href="#logistics">物流配送</a></li>
+                        <li><a href="#service">客户服务</a></li>
+                        <li><a href="#support">技术支持</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p><i class="fas fa-phone"></i> 139 0297 3845</p>
+                    <p><i class="fas fa-envelope"></i> 286088626@qq.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 深圳市龙华区宝能科技园10栋22A</p>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 万企供应链. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/about-page.js"></script>
+</body>
+</html>

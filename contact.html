@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 万企供应链</title>
+    <meta name="description" content="联系万企供应链，获取专业的健康产品供应链服务。电话：139 0297 3845，地址：深圳市南山区科技园">
+    <meta name="keywords" content="联系我们,万企供应链,深圳,客服电话,公司地址">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/contact-page.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="万企供应链" class="logo">
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="products.html" class="nav-link">产品中心</a></li>
+                <li><a href="brands.html" class="nav-link">品牌合作</a></li>
+                <li><a href="about.html" class="nav-link">关于我们</a></li>
+                <li><a href="contact.html" class="nav-link active">联系我们</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="search-btn" onclick="openSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="contact-btn" onclick="showWechatQR()">
+                    <i class="fas fa-comments"></i>
+                    联系我们
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span class="separator">/</span>
+                    <span class="current">联系我们</span>
+                </nav>
+                <h1 class="hero-title">联系我们</h1>
+                <p class="hero-subtitle">随时为您提供专业的服务和支持</p>
+                <div class="quick-contact">
+                    <div class="quick-item">
+                        <i class="fas fa-phone"></i>
+                        <span>139 0297 3845</span>
+                    </div>
+                    <div class="quick-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>286088626@qq.com</span>
+                    </div>
+                    <div class="quick-item">
+                        <i class="fas fa-clock"></i>
+                        <span>周一至周日 9:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="method-title">电话咨询</h3>
+                    <p class="method-description">专业客服团队为您提供一对一服务</p>
+                    <div class="method-info">
+                        <div class="info-item">
+                            <span class="info-label">客服热线：</span>
+                            <span class="info-value">139 0297 3845</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">服务时间：</span>
+                            <span class="info-value">周一至周日 9:00-18:00</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="callPhone('139 0297 3845')">
+                        <i class="fas fa-phone"></i>
+                        立即拨打
+                    </button>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fab fa-weixin"></i>
+                    </div>
+                    <h3 class="method-title">微信咨询</h3>
+                    <p class="method-description">扫描二维码添加客服微信，随时沟通</p>
+                    <div class="method-info">
+                        <div class="qr-code">
+                            <img src="images/1.jpg" alt="客服微信二维码">
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showWechatQR()">
+                        <i class="fab fa-weixin"></i>
+                        扫码咨询
+                    </button>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="method-title">邮件联系</h3>
+                    <p class="method-description">发送邮件给我们，24小时内回复</p>
+                    <div class="method-info">
+                        <div class="info-item">
+                            <span class="info-label">客服邮箱：</span>
+                            <span class="info-value">286088626@qq.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">合作邮箱：</span>
+                            <span class="info-value">286088626@qq.com</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="sendEmail('286088626@qq.com')">
+                        <i class="fas fa-envelope"></i>
+                        发送邮件
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在线留言 -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-content">
+                <div class="form-header">
+                    <h2 class="section-title">在线留言</h2>
+                    <p class="section-subtitle">填写以下表单，我们将尽快与您联系</p>
+                </div>
+                <form class="contact-form" onsubmit="submitContactForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系电话 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="请输入您的联系电话">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">邮箱地址</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">公司名称</label>
+                            <input type="text" id="company" name="company" placeholder="请输入您的公司名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">咨询主题 *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">请选择咨询主题</option>
+                            <option value="product">产品咨询</option>
+                            <option value="cooperation">合作咨询</option>
+                            <option value="service">服务咨询</option>
+                            <option value="complaint">投诉建议</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言内容 *</label>
+                        <textarea id="message" name="message" required placeholder="请详细描述您的需求或问题" rows="6"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i>
+                            提交留言
+                        </button>
+                        <button type="reset" class="btn btn-outline">
+                            <i class="fas fa-redo"></i>
+                            重置表单
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司地址 -->
+    <section class="company-location">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <h2 class="section-title">公司地址</h2>
+                    <div class="address-details">
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="address-text">
+                                <h4>万企供应链（深圳）有限公司</h4>
+                                <p>深圳市龙华区宝能科技园10栋22A</p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-subway"></i>
+                            <div class="address-text">
+                                <h4>交通指引</h4>
+                                <p>地铁2号线科苑站A出口，步行5分钟</p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-car"></i>
+                            <div class="address-text">
+                                <h4>停车信息</h4>
+                                <p>大厦地下停车场，访客可免费停车2小时</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-actions">
+                        <button class="btn btn-primary" onclick="openMap()">
+                            <i class="fas fa-map"></i>
+                            查看地图
+                        </button>
+                        <button class="btn btn-outline" onclick="getDirections()">
+                            <i class="fas fa-route"></i>
+                            获取路线
+                        </button>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>地图加载中...</p>
+                        <small>点击"查看地图"打开详细地图</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务时间 -->
+    <section class="service-hours">
+        <div class="container">
+            <div class="hours-content">
+                <h2 class="section-title">服务时间</h2>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <div class="hours-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>客服热线</h3>
+                        <p class="hours-time">周一至周日 9:00-18:00</p>
+                        <p class="hours-note">节假日正常服务</p>
+                    </div>
+                    <div class="hours-item">
+                        <div class="hours-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <h3>微信客服</h3>
+                        <p class="hours-time">24小时在线</p>
+                        <p class="hours-note">随时响应您的咨询</p>
+                    </div>
+                    <div class="hours-item">
+                        <div class="hours-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>邮件回复</h3>
+                        <p class="hours-time">24小时内回复</p>
+                        <p class="hours-note">工作日当天回复</p>
+                    </div>
+                    <div class="hours-item">
+                        <div class="hours-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>配送服务</h3>
+                        <p class="hours-time">周一至周六</p>
+                        <p class="hours-note">深圳地区当日达</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">常见问题</h2>
+                <p class="section-subtitle">快速找到您需要的答案</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>如何联系客服？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以通过以下方式联系我们：1）拨打客服热线400-888-8888；2）添加客服微信；3）发送邮件至service@wanqi-supply.com；4）在线留言。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>配送范围和时间？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们主要服务深圳地区，深圳地区可实现当日达或次日达。其他地区根据距离3-5个工作日到货。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>如何成为合作伙伴？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>请访问我们的"品牌合作"页面了解详细的合作模式，或直接联系我们的合作部门：286088626@qq.com。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>产品质量如何保证？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们与华润三九、八马茶业等知名品牌直接合作，所有产品均为正品，并提供相应的质量保证和售后服务。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><a href="tel:13902973845">客服热线：139 0297 3845</a></li>
+                        <li><a href="mailto:286088626@qq.com">客服邮箱</a></li>
+                        <li><a href="mailto:286088626@qq.com">合作邮箱</a></li>
+                        <li><a href="#map">公司地址</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>服务时间</h4>
+                    <ul>
+                        <li>客服热线：9:00-18:00</li>
+                        <li>微信客服：24小时在线</li>
+                        <li>邮件回复：24小时内</li>
+                        <li>配送服务：周一至周六</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>公司地址</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 深圳市龙华区宝能科技园10栋22A</p>
+                    <p><i class="fas fa-subway"></i> 地铁2号线科苑站</p>
+                    <p><i class="fas fa-car"></i> 免费停车2小时</p>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 万企供应链. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-page.js"></script>
+</body>
+</html>

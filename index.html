@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="万企供应链（深圳）有限公司 - 华润三九大健康保健食品及八马茶业深圳地区经销商，专注健康供应链服务">
+    <meta name="keywords" content="万企供应链,华润三九,八马茶业,保健食品,茶叶,深圳,健康供应链">
+    <title>万企供应链（深圳）有限公司 - 健康供应链专家</title>
+    
+    <!-- 字体引入 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="images/logo.png" alt="万企供应链" class="logo">
+                    <span class="brand-text">万企供应链</span>
+                </div>
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">首页</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">产品中心</a></li>
+                    <li class="nav-item"><a href="brands.html" class="nav-link">品牌合作</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main">
+        <!-- 首页Banner区 -->
+        <section id="home" class="hero-section hero-banner">
+            <div class="banner-slider">
+                <div class="banner-slide active">
+                    <div class="hero-background">
+                        <img src="images/banner1.png" alt="万企供应链" class="banner-image">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1 class="hero-title">万企供应链</h1>
+                            <p class="hero-subtitle">华润三九大健康保健食品 · 八马茶业深圳地区经销商</p>
+                            <p class="hero-description">专业的健康产品供应链服务商，为您提供优质的健康产品和茶叶</p>
+                            <div class="hero-buttons">
+                                <a href="products.html" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    浏览产品
+                                </a>
+                                <a href="brands.html" class="btn btn-outline btn-lg">
+                                    <i class="fas fa-handshake"></i>
+                                    品牌合作
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-slide">
+                    <div class="hero-background">
+                        <img src="images/banner2.png" alt="华润三九健康产品" class="banner-image">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1 class="hero-title">华润三九大健康</h1>
+                            <p class="hero-subtitle">科学配方 · 品质保证 · 专业认证</p>
+                            <p class="hero-description">传承百年制药工艺，为您的健康保驾护航</p>
+                            <div class="hero-buttons">
+                                <a href="products.html?category=health" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-heart"></i>
+                                    健康产品
+                                </a>
+                                <a href="brands.html#huarun" class="btn btn-outline btn-lg">
+                                    <i class="fas fa-info-circle"></i>
+                                    了解更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-slide">
+                    <div class="hero-background">
+                        <img src="images/banner3.png" alt="八马茶业精品茶叶" class="banner-image">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1 class="hero-title">八马茶业</h1>
+                            <p class="hero-subtitle">百年传承 · 匠心工艺 · 原产地直供</p>
+                            <p class="hero-description">传承中华茶文化，品味生活真谛</p>
+                            <div class="hero-buttons">
+                                <a href="products.html?category=tea" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-leaf"></i>
+                                    精品茶叶
+                                </a>
+                                <a href="brands.html#bama" class="btn btn-outline btn-lg">
+                                    <i class="fas fa-info-circle"></i>
+                                    品牌故事
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 轮播控制 -->
+            <div class="banner-controls">
+                <button class="banner-prev" onclick="changeBanner(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="banner-next" onclick="changeBanner(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- 轮播指示器 -->
+            <div class="banner-indicators">
+                <span class="indicator active" onclick="currentBanner(1)"></span>
+                <span class="indicator" onclick="currentBanner(2)"></span>
+                <span class="indicator" onclick="currentBanner(3)"></span>
+            </div>
+        </section>
+
+        <!-- 品牌展示区 -->
+        <section class="brands-showcase">
+            <div class="container">
+                <h2 class="section-title">合作品牌</h2>
+                <p class="section-subtitle">与知名品牌深度合作，为您提供优质的健康产品和茶叶</p>
+                <div class="brands-grid">
+                    <div class="brand-item">
+                        <img src="https://via.placeholder.com/120x120/2A5C45/FFFFFF?text=999" alt="华润三九">
+                        <h3>华润三九大健康</h3>
+                        <p>专业保健食品品牌，致力于为消费者提供安全、有效的健康产品</p>
+                        <div class="brand-features">
+                            <span class="tag">科学配方</span>
+                            <span class="tag">品质保证</span>
+                            <span class="tag">专业认证</span>
+                        </div>
+                    </div>
+                    <div class="brand-item">
+                        <img src="https://via.placeholder.com/120x120/5D4037/FFFFFF?text=八马" alt="八马茶业">
+                        <h3>八马茶业</h3>
+                        <p>传统茶文化传承者，百年制茶工艺，匠心打造每一款茶叶</p>
+                        <div class="brand-features">
+                            <span class="tag">百年传承</span>
+                            <span class="tag">匠心工艺</span>
+                            <span class="tag">原产地直供</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品精选区 -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">精选产品</h2>
+                <p class="section-subtitle">精心挑选的优质产品，满足您的健康需求</p>
+
+                <div class="product-categories">
+                    <div class="category-section">
+                        <h3 class="category-title">
+                            <i class="fas fa-leaf"></i>
+                            健康滋补系列
+                        </h3>
+                        <div class="products-preview" data-category="health">
+                            <div class="products-carousel auto-rotate">
+                                <!-- 第一组产品 -->
+                                <div class="products-row">
+                                    <div class="product-card" data-category="health" data-product-id="h001">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="维生素C片">
+                                            <div class="product-badge">热销</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">维生素C片</h4>
+                                            <p class="product-description">增强免疫力，天然维生素C，易吸收配方</p>
+                                            <div class="product-price">¥128</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm" onclick="consultProduct('h001')">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm" onclick="viewProductDetail('h001')">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h002">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="高钙片">
+                                            <div class="product-badge">推荐</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">高钙片</h4>
+                                            <p class="product-description">补充钙质，强健骨骼，适合全家人</p>
+                                            <div class="product-price">¥98</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm" onclick="consultProduct('h002')">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm" onclick="viewProductDetail('h002')">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h003">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="乳清蛋白粉">
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">乳清蛋白粉</h4>
+                                            <p class="product-description">优质蛋白质补充，运动健身必备</p>
+                                            <div class="product-price">¥268</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h004">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="复合维生素">
+                                            <div class="product-badge">新品</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">复合维生素</h4>
+                                            <p class="product-description">多种维生素配方，全面营养补充</p>
+                                            <div class="product-price">¥158</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第二组产品 -->
+                                <div class="products-row">
+                                    <div class="product-card" data-category="health" data-product-id="h005">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="鱼油胶囊">
+                                            <div class="product-badge">热销</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">深海鱼油</h4>
+                                            <p class="product-description">Omega-3脂肪酸，保护心血管健康</p>
+                                            <div class="product-price">¥188</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h006">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="益生菌">
+                                            <div class="product-badge">推荐</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">益生菌胶囊</h4>
+                                            <p class="product-description">调节肠道菌群，促进消化健康</p>
+                                            <div class="product-price">¥138</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h007">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="胶原蛋白">
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">胶原蛋白肽</h4>
+                                            <p class="product-description">美容养颜，延缓衰老，焕发青春</p>
+                                            <div class="product-price">¥298</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h008">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="叶酸片">
+                                            <div class="product-badge">孕妇专用</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">叶酸片</h4>
+                                            <p class="product-description">孕期必备，预防胎儿神经管缺陷</p>
+                                            <div class="product-price">¥88</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第三组产品 -->
+                                <div class="products-row">
+                                    <div class="product-card" data-category="health" data-product-id="h009">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="蜂胶胶囊">
+                                            <div class="product-badge">天然</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">蜂胶胶囊</h4>
+                                            <p class="product-description">天然抗菌，增强免疫力</p>
+                                            <div class="product-price">¥168</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h010">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="螺旋藻">
+                                            <div class="product-badge">有机</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">螺旋藻片</h4>
+                                            <p class="product-description">天然绿色食品，营养全面均衡</p>
+                                            <div class="product-price">¥118</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h011">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="辅酶Q10">
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">辅酶Q10</h4>
+                                            <p class="product-description">保护心脏，抗氧化，延缓衰老</p>
+                                            <div class="product-price">¥228</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h012">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="葡萄籽提取物">
+                                            <div class="product-badge">抗氧化</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">葡萄籽提取物</h4>
+                                            <p class="product-description">强效抗氧化，美白护肤</p>
+                                            <div class="product-price">¥198</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第四组产品 -->
+                                <div class="products-row">
+                                    <div class="product-card" data-category="health" data-product-id="h013">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="钙镁锌片">
+                                            <div class="product-badge">三合一</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">钙镁锌片</h4>
+                                            <p class="product-description">三重营养，骨骼健康全面保护</p>
+                                            <div class="product-price">¥148</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h014">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="维生素E">
+                                            <div class="product-badge">美容</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">天然维生素E</h4>
+                                            <p class="product-description">抗氧化美容，延缓肌肤衰老</p>
+                                            <div class="product-price">¥108</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h015">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="铁质叶酸片">
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">铁质叶酸片</h4>
+                                            <p class="product-description">补血补铁，预防贫血</p>
+                                            <div class="product-price">¥78</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="health" data-product-id="h016">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="蛋白质粉">
+                                            <div class="product-badge">高蛋白</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">植物蛋白粉</h4>
+                                            <p class="product-description">植物来源，易消化吸收</p>
+                                            <div class="product-price">¥238</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-primary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 导航按钮 -->
+                            <button class="products-nav prev" onclick="previousProducts('health')">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="products-nav next" onclick="nextProducts('health')">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <!-- 指示器 -->
+                            <div class="products-indicators">
+                                <div class="product-indicator active" onclick="goToProducts('health', 0)"></div>
+                                <div class="product-indicator" onclick="goToProducts('health', 1)"></div>
+                                <div class="product-indicator" onclick="goToProducts('health', 2)"></div>
+                                <div class="product-indicator" onclick="goToProducts('health', 3)"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title">
+                            <i class="fas fa-coffee"></i>
+                            品质茗茶系列
+                        </h3>
+                        <div class="products-preview" data-category="tea">
+                            <div class="products-carousel auto-rotate">
+                                <!-- 第一组茶叶产品 -->
+                                <div class="products-row">
+                                    <div class="product-card" data-category="tea" data-product-id="t001">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="安溪铁观音">
+                                            <div class="product-badge">精品</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">安溪铁观音</h4>
+                                            <p class="product-description">传统工艺制作，香气浓郁，回甘持久</p>
+                                            <div class="product-price">¥188</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="tea" data-product-id="t002">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="武夷大红袍">
+                                            <div class="product-badge">限量</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">武夷大红袍</h4>
+                                            <p class="product-description">岩茶之王，独特岩韵，珍贵稀有</p>
+                                            <div class="product-price">¥388</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="tea" data-product-id="t003">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="云南普洱茶">
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">云南普洱茶</h4>
+                                            <p class="product-description">陈年普洱，醇厚甘甜，养胃护胃</p>
+                                            <div class="product-price">¥158</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="tea" data-product-id="t004">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="西湖龙井">
+                                            <div class="product-badge">新茶</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">西湖龙井</h4>
+                                            <p class="product-description">明前龙井，清香淡雅，口感鲜爽</p>
+                                            <div class="product-price">¥268</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第二组茶叶产品 -->
+                                <div class="products-row">
+                                    <div class="product-card" data-category="tea" data-product-id="t005">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="洞庭碧螺春">
+                                            <div class="product-badge">特级</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">洞庭碧螺春</h4>
+                                            <p class="product-description">卷曲如螺，香气清雅，滋味甘醇</p>
+                                            <div class="product-price">¥228</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="tea" data-product-id="t006">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="正山小种">
+                                            <div class="product-badge">经典</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">正山小种</h4>
+                                            <p class="product-description">红茶鼻祖，松烟香浓，甘甜醇厚</p>
+                                            <div class="product-price">¥198</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="tea" data-product-id="t007">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="白毫银针">
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">白毫银针</h4>
+                                            <p class="product-description">白茶之王，清香甘甜，具有药用价值</p>
+                                            <div class="product-price">¥358</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-category="tea" data-product-id="t008">
+                                        <div class="product-image">
+                                            <img src="images/1.jpg" alt="茉莉花茶">
+                                            <div class="product-badge">花香</div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-title">茉莉花茶</h4>
+                                            <p class="product-description">花香茶韵，清香怡人，舒缓心情</p>
+                                            <div class="product-price">¥138</div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-secondary btn-sm">立即咨询</button>
+                                                <button class="btn btn-outline btn-sm">了解详情</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 导航按钮 -->
+                            <button class="products-nav prev" onclick="previousProducts('tea')">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="products-nav next" onclick="nextProducts('tea')">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <!-- 指示器 -->
+                            <div class="products-indicators">
+                                <div class="product-indicator active" onclick="goToProducts('tea', 0)"></div>
+                                <div class="product-indicator" onclick="goToProducts('tea', 1)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="#products" class="btn btn-primary btn-lg">查看全部产品</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公司优势 -->
+        <section class="company-advantages">
+            <div class="container">
+                <h2 class="section-title">为什么选择万企供应链</h2>
+                <p class="section-subtitle">专业、可靠、贴心的健康供应链服务商</p>
+
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>品牌授权</h3>
+                        <p>华润三九、八马茶业官方授权经销商，保证产品正品</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>快速配送</h3>
+                        <p>深圳地区当日达，珠三角地区次日达，全国3-5天到货</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>专业咨询</h3>
+                        <p>专业营养师和茶艺师团队，提供个性化健康建议</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>品质保障</h3>
+                        <p>严格质量控制，假一赔十，让您放心购买</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>贴心服务</h3>
+                        <p>7×24小时客服支持，售前售后全程跟踪服务</p>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>会员福利</h3>
+                        <p>会员专享优惠，积分兑换，生日特惠等多重福利</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快捷入口 -->
+        <section class="quick-access">
+            <div class="container">
+                <h2 class="section-title" style="color: white; margin-bottom: 3rem;">服务导航</h2>
+                <div class="access-grid">
+                    <a href="#products" class="access-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>健康滋补</h3>
+                        <p>精选保健食品，呵护您的健康</p>
+                    </a>
+                    <a href="#products" class="access-item">
+                        <i class="fas fa-coffee"></i>
+                        <h3>品质茗茶</h3>
+                        <p>传统茶叶精品，品味生活</p>
+                    </a>
+                    <a href="#knowledge" class="access-item">
+                        <i class="fas fa-book"></i>
+                        <h3>养生知识</h3>
+                        <p>专业健康指导，科学养生</p>
+                    </a>
+                    <a href="#service" class="access-item">
+                        <i class="fas fa-headset"></i>
+                        <h3>客户服务</h3>
+                        <p>贴心售后保障，安心购买</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户见证 -->
+        <section class="customer-testimonials">
+            <div class="container">
+                <h2 class="section-title">客户见证</h2>
+                <p class="section-subtitle">听听我们客户的真实反馈</p>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"在万企供应链购买保健品已经两年了，产品质量很好，客服态度也很棒，会继续支持！"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://via.placeholder.com/60x60/A0C49D/FFFFFF?text=李" alt="李女士">
+                            </div>
+                            <div class="author-info">
+                                <h4>李女士</h4>
+                                <span>深圳南山区</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"八马茶业的铁观音真的很香，包装也很精美，送礼自用都很棒，价格也合理。"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://via.placeholder.com/60x60/A0C49D/FFFFFF?text=王" alt="王先生">
+                            </div>
+                            <div class="author-info">
+                                <h4>王先生</h4>
+                                <span>深圳福田区</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"配送很快，产品包装完好，营养师的建议也很专业，让我对健康有了更好的认识。"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://via.placeholder.com/60x60/A0C49D/FFFFFF?text=张" alt="张女士">
+                            </div>
+                            <div class="author-info">
+                                <h4>张女士</h4>
+                                <span>深圳宝安区</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>万企供应链</h3>
+                    <p>专注健康供应链服务，为您提供优质的保健食品和茶叶产品。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="brands.html">品牌合作</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 深圳市南山区</p>
+                    <p><i class="fas fa-phone"></i> 139 0297 3845</p>
+                    <p><i class="fas fa-envelope"></i> 286088626@qq.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 万企供应链（深圳）有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript 文件 -->
+    <script src="js/utils.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
